@@ -1,0 +1,24 @@
+{
+  "name": "parking",
+  "version": "1.0.0",
+  "description": "The parking module of I1820 platform in Avidnet",
+  "main": "index.js",
+  "dependencies": {
+    "@i1820/hub": "^1.2.0",
+    "hapi": "^17.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avidnet/parking.git"
+  },
+  "author": "Parham Alvani <parham.alvani@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Avidnet/parking/issues"
+  },
+  "homepage": "https://github.com/Avidnet/parking#readme"
+}
