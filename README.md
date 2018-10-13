@@ -1,4 +1,5 @@
 # parking
+[![Travis branch](https://img.shields.io/travis/com/Avidnet/parking/master.svg?style=flat-square)](https://travis-ci.com/Avidnet/parking)
 
 ## Introduction
 The parking module of I1820 platform in Avidnet. This module sends following data when sensor state changes.
