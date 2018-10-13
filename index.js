@@ -32,7 +32,15 @@ server.route([
     path: '/parking',
     handler: (request, h) => {
       if (request.query['sensorID'] === '1194284120302') {
-        client.log(request.query)
+        const parsed = {
+          sensorID: request.query['sensorID'], // sensor identification
+          condition: request.query['condition'] === '0' ? false : true, // ?
+          temperature: parseFloat(request.query['temperature']), // board temperature
+          rawData: request.query['RawData'] === '0' ? false : true, // is there any car on our sensor?
+          battery: parseFloat(request.query['Battery']) // sensor battery level
+        }
+        console.log(parsed)
+        client.log(parsed)
       }
       return '18.20 is leaving us'
     }
