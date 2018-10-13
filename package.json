@@ -7,9 +7,16 @@
     "@i1820/hub": "^1.2.0",
     "hapi": "^17.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --color src/*.js index.js"
   },
   "repository": {
     "type": "git",
