@@ -33,9 +33,9 @@ server.route([
       if (request.query['sensorID'] === '1194284120302') {
         const parsed = {
           sensorID: request.query['sensorID'], // sensor identification
-          condition: request.query['condition'] === '0' ? false : true, // ?
+          condition: request.query['condition'] === '1', // ?
           temperature: parseFloat(request.query['temperature']), // board temperature
-          rawData: request.query['RawData'] === '0' ? false : true, // is there any car on our sensor?
+          rawData: request.query['RawData'] === '1', // is there any car on our sensor?
           battery: parseFloat(request.query['Battery']) // sensor battery level
         }
         console.log(parsed)
