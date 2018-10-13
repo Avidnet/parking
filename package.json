@@ -16,7 +16,7 @@
     "eslint-plugin-standard": "^4.0.0"
   },
   "scripts": {
-    "test": "eslint --color src/*.js index.js"
+    "test": "eslint --color index.js"
   },
   "repository": {
     "type": "git",
