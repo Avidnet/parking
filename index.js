@@ -17,7 +17,6 @@ client.on('ready', () => {
   console.log('We are good to go')
 })
 
-
 /* HTTP server initiation */
 const Hapi = require('hapi')
 
@@ -48,8 +47,8 @@ server.route([
 ])
 
 const init = async () => {
-    await server.start();
-    console.log(`Server running at: ${server.info.uri}`);
+  await server.start()
+  console.log(`Server running at: ${server.info.uri}`)
 }
 
 init()
