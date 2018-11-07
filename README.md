@@ -1,4 +1,4 @@
-# parking
+# Smart Parking
 [![Travis branch](https://img.shields.io/travis/com/Avidnet/parking/master.svg?style=flat-square)](https://travis-ci.com/Avidnet/parking)
 
 ## Introduction
@@ -17,3 +17,7 @@ The parking module of I1820 platform in Avidnet. This module sends following dat
   "Battery": "3.39"
 }
 ```
+
+The parking module senses vehicles on top of it and can indicate that a parking spot is empty when the car leaves it.
+This hardware module is implemented by Amin Saeedi and uses LoRa for its communication but
+it cannot work with LoRaWAN so it cannot connect to standard LoRa servers like TTN and this code handles its data.
